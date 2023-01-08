@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 
-    //Conexion a base de datos constantes de config
+//Conexion a base de datos constantes de config
 $servidor = "mysql:dbname=".BD.";host=".SERVIDOR;
 
 try{
