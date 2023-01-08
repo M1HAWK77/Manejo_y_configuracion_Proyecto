@@ -36,7 +36,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Inicio de Sesion: </p>
 
-      <form action="panel.php" method="post">
+      <form action="vistaPanel.php" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
