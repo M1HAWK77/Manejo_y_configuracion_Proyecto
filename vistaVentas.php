@@ -1,3 +1,4 @@
+<?php include("modulos/ventas.php");?>
 <?php include("cabecera.php") ?>
 
 <!-- Content Wrapper. Contains page content -->
