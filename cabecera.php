@@ -210,7 +210,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-            <a href="panel.php" class="nav-link active">
+            <a href="vistaPanel.php" class="nav-link active">
               <i class="nav-icon fas fa-cog mx-1"></i>
               <p>
                 Inicio
@@ -219,7 +219,7 @@
             </a>
           </li>
           <li class="nav-item menu-open">
-            <a href="productos.php" class="nav-link active">
+            <a href="vistaProductos.php" class="nav-link active">
               <i class="nav-icon fas fa-cog mx-1"></i>
               <p>
                 Productos
@@ -229,7 +229,7 @@
             
           </li>
           <li class="nav-item menu-open">
-            <a href="ventas.php" class="nav-link active">
+            <a href="vistaVentas.php" class="nav-link active">
               <i class="nav-icon fas fa-cog mx-1"></i>
               <p>
                 Ventas
