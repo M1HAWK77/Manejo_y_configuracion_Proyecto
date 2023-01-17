@@ -208,7 +208,7 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+          with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
             <a href="vistaPanel.php" class="nav-link active">
               <i class="nav-icon fas fa-cog mx-1"></i>

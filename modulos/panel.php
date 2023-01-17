@@ -1,3 +1,3 @@
 <?php
-    echo "Hola soy panel en modulos";
+include("global/sesiones.php");
 ?>
