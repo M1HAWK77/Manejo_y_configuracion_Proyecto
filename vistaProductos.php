@@ -1,6 +1,18 @@
 <?php include("modulos/productos.php");?>
 <?php include("cabecera.php") ?>
+<?php include("global/config.php") ?>
+<?php include("global/conexionBD.php") ?>
+<head>
+    <meta charse="UTF-8">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</head>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -20,6 +32,37 @@
     </div><!-- /.container-fluid -->
   </div>
   <!-- /.content-header -->
+  <div class="card card-info">
+  <div class="alert alert-success">
+        Pantalla de mensaje ...
+        <a href="#" class="badge badge-success">Ver carrito</a>
+    </div>
+    <div class="row">
+
+
+
+        <?php
+        $sentencia = $pdo->prepare("SELECT * FROM `productos`");
+        $sentencia->execute();
+        $listaProductos = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+        // print_r($listaProductos);
+        ?>
+        <?php foreach ($listaProductos as $producto) { ?>
+            <div class="col-3">
+                <div class="card">
+                    <img tittle="<?php echo $producto['nombreP']; ?>" alt="<?php echo $producto['nombreP']; ?>" class="card-img-top" src="<?php echo $producto['img']; ?>">
+                    <div class="card-body">
+                        <span><?php echo $producto['nombreP']; ?></span>
+                        <h5 class="" card-tittle>$<?php echo $producto['precioP']; ?></h5>
+                        <p class="card-text">Descripcion</p>
+
+                        <button class="btn btn-primary" name="btnAccion" value="Agregar" type="submit"> Agregar carrito </button>
+
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+    </div>
 
   <!-- Main content -->
   <section class="content">
