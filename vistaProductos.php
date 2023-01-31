@@ -64,6 +64,12 @@
         <?php } ?>
     </div>
 
+    <script>
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+});
+</script>
+
   <!-- Main content -->
   <section class="content">
     <div class="container-fluid">
