@@ -17,12 +17,12 @@ if (isset($_POST["btnLogin"])) {
     //da la informacion que corresponde a la seleccion de usuario 
     $registro=$sentenciaSQL->fetch(PDO::FETCH_ASSOC);
     print_r($registro);
+    $numeroRegistros = $sentenciaSQL->rowCount();
     
     if ($numeroRegistros >= 1) {
         //variable de sesion, doy valor a la sesion
         session_start();
         $_SESSION['usuario'] = $registro;
-        $numeroRegistros = $sentenciaSQL->rowCount();
 
         echo "Bienvenido";
         header('location: vistaPanel.php');
