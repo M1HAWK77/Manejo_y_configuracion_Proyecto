@@ -2,7 +2,7 @@
 <?php include("cabecera.php") ?>
 <?php include("global/config.php") ?>
 <?php include("global/conexionBD.php") ?>
-
+<?php include("carrito.php") ?>
 <head>
   <meta charse="UTF-8">
   <meta name="viewport" content="width=device-width, inicial-scale=1.0">
