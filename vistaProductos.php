@@ -51,7 +51,7 @@
       <?php foreach ($listaProductos as $producto) { ?>
        <div class="col-3">
         <div class="card">
-          <img tittle="<?php echo $producto['nombreP']; ?>" alt="<?php echo
+          <img height="317px" tittle="<?php echo $producto['nombreP']; ?>" alt="<?php echo
                                                                   $producto['nombreP']; ?>" class="card-img-top" src="<?php echo $producto['img']; ?>" data-toggle="popover" data-trigger="hover" data-content="<?php echo $producto['descripcion']; ?>">
           
             <div class="card-body">
@@ -59,10 +59,10 @@
               <h5 class="" card-tittle>$<?php echo $producto['precioP']; ?></h5>
               <p class="card-text">Descripcion</p>
               <form action="" method="post">
-                <input type="text" name="id" id="id" value="<?php echo openssl_encrypt($producto['id'], COD, KEY); ?>">
-                <input type="text" name="nombre" id="nombre" value="<?php echo openssl_encrypt($producto['nombreP'], COD, KEY); ?>">
-                <input type="text" name="precio" id="precio" value="$<?php echo openssl_encrypt($producto['precioP'], COD, KEY); ?>">
-                <input type="text" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt(1, COD, KEY); ?>">
+                <input type="hidden" name="id" id="id" value="<?php echo openssl_encrypt($producto['id'], COD, KEY); ?>">
+                <input type="hidden" name="nombre" id="nombre" value="<?php echo openssl_encrypt($producto['nombreP'], COD, KEY); ?>">
+                <input type="hidden" name="precio" id="precio" value="$<?php echo openssl_encrypt($producto['precioP'], COD, KEY); ?>">
+                <input type="hidden" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt(1, COD, KEY); ?>">
                 <button class="btn btn-primary" name="btnAccion" value="Agregar" type="submit">
                   Agregar carrito </button>
               </form>
