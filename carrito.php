@@ -33,7 +33,7 @@ switch($_POST['btnAccion']){
                                 $mensaje = "Upsss...Algo paso con el precio" ."<br/>". $PRECIO;
                                 break;}
         
-if(isset($_SESSION['CARRITO'])){
+if(!isset($_SESSION['CARRITO'])){
     $producto = array('ID'=>$ID,'NOMBRE'=>$NOMBRE,'CANTIDAD'=>$CANTIDAD,'PRECIO'=>$PRECIO);
     $_SESSION['CARRITO'][0] = $producto;
 }else{
@@ -41,7 +41,7 @@ if(isset($_SESSION['CARRITO'])){
     $producto = array( 'ID'=>$ID,'NOMBRE'=>$NOMBRE,'CANTIDAD'=>$CANTIDAD,'PRECIO'=>$PRECIO );
                         $_SESSION['CARRITO'][$NumeroProductos] = $producto;                 
 }
-$mensaje = print_r($_SESSION['CARRITO'], true);
+$mensaje = print_r($_SESSION, true);
             break;
 }
 }
