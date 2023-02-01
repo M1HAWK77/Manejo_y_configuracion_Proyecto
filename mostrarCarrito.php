@@ -33,7 +33,13 @@ include 'cabecera.php';
                     <td width="15%" class="text-center"><?php echo $producto['CANTIDAD']?></td>
                     <td width="20%" class="text-center"><?php echo $producto['PRECIO']?></td>
                     <td width="20%" class="text-center"><?php echo number_format( $producto['PRECIO'] * $producto['CANTIDAD'],2 )?></td>
-                    <td width="5%"><button class="btn btn-danger" type="button">Eliminar</button></td>
+                    <form action="" method="post">
+
+                    <!-- envio id, encriptado -->
+                    <input type="hidden" name="id" value="<?php echo openssl_encrypt($producto['ID'],COD,KEY); ?>">
+                    <td width="5%"><button class="btn btn-danger" type="submit" name="btnAccion" value="Eliminar">Eliminar</button></td>
+
+                    </form>
                 </tr>
                 
                 <?php $total=$total+($producto['PRECIO'] * $producto['CANTIDAD'])?>
