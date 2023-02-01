@@ -34,11 +34,16 @@
   </div>
   <!-- /.content-header -->
   <div class="card card-info">
+
+    <!-- 15 ELIMINAR MENSAJE -->
+    <?php if($mensaje != ""){?>
     <div class="alert alert-success">
       <?php echo($mensaje) ?>
       <!-- Pantalla de mensaje ... -->
-      <a href="#" class="badge badge-success">Ver carrito</a>
+      <a href="mostrarCarrito.php" class="badge badge-success">Ver carrito</a>
     </div>
+
+    <?php }?>
     <div class="row">
 
 
