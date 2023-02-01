@@ -19,4 +19,12 @@ $Login = curl_init("https://api.sandbox.paypal.com/v1/oauth2/token");
     <hr class = "my-4">
     <p>Los items han sido enviados al correo ingresado</p>
 </div>
+
+<?php
+include 'global/config.php';
+include 'global/conexionBD.php';
+        $SID = session_id();
+        $sentenciaV = $pdo->prepare("UPDATE `ventas` SET `status`='Realizada' WHERE `claveTransaccion`=:ClaveTransaccion");
+        $sentenciaV->bindParam(":ClaveTransaccion", $SID);                       
+        $sentenciaV->execute();?>
 <?php include('footer.php') ?>
