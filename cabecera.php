@@ -48,7 +48,9 @@
             <a href="index3.php" class="nav-link">Home</a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="mostrarCarrito.php" class="nav-link">Carrito(0)</a>
+            <a href="mostrarCarrito.php" class="nav-link">Carrito(<?php
+              echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
+            ?>)</a>
           </li>
         </ul>
 
