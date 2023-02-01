@@ -57,6 +57,27 @@ include 'cabecera.php';
                     <td></td>
                 </tr>
 
+                <tr>
+                    <td colspan="5">
+
+                    <form action="pagar.php" method="post">
+
+                        <div class="alert alert-success">
+
+                            
+                            <div class="form-group">
+                                <label for="my-input">Correo de contacto:</label>  <br>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="Por favor ingresar un correo" required>
+                            </div>
+
+                            <small id="emailHelp" class="form-text text-muted"> <b> Los productos se enviaran a este correo</b></small>
+                        </div>
+                            <button class="btn btn-primary btn-lg btn-block" type="submit" value="proceder" name="btnAccion">Proceder a pagar >></button>
+
+                    </form>
+
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -67,6 +88,8 @@ include 'cabecera.php';
         </div>
 
     <?php } ?>
+
+
 
 </div>
 
