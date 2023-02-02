@@ -85,16 +85,16 @@
     </script>
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
+    <!-- <section class="content">
+      <div class="container-fluid"> -->
 
         <!-- Formulario de productos -->
-        <div class="card card-info">
+        <!-- <div class="card card-info">
           <div class="card-header">
             <h3 class="card-title">Horizontal Form</h3>
           </div>
-          <!-- /.card-header -->
-          <!-- form start -->
+
+
           <form class="form-horizontal">
             <div class="card-body">
               <div class="form-group row">
@@ -117,22 +117,23 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
+
             <!-- /.card-body -->
-            <div class="card-footer">
+            <!-- <div class="card-footer">
               <button type="submit" class="btn btn-info">Sign in</button>
               <button type="submit" class="btn btn-default float-right">Cancel</button>
-            </div>
+            </div> -->
             <!-- /.card-footer -->
-          </form>
-        </div>
+          <!-- </form>
+        </div> -->
 
 
         <!-- Fin formulario de productos -->
 
 
         <!-- Main row -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-12">
             <div class="card">
               <div class="card-header">
@@ -196,7 +197,7 @@
             </div>
 
           </div>
-        </div>
+        </div> -->
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->
     </section>

@@ -23,7 +23,6 @@ if (isset($_POST["btnLogin"])) {
         //variable de sesion, doy valor a la sesion
         session_start();
         $_SESSION['usuario'] = $registro;
-
         echo "Bienvenido";
         header('location: vistaPanel.php');
     } else {

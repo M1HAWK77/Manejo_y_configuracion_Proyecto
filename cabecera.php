@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Dashboard</title>
+    <title>GT Tienda | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -62,39 +62,23 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img src="dist/img/getto.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">Team DevComp</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="dist/img/getto.png" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  Team DevComp - Web Developers
+                  <small>Member since Jan. 2023</small>
                 </p>
               </li>
               <!-- Menu Body -->
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
-                  </div>
-                </div>
-                <!-- /.row -->
-              </li>
+          
               <!-- Menu Footer-->
               <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
                 <div class="pull-right">
                   <a href="cerrarsesion.php" class="btn btn-default btn-flat">Sign out</a>
                 </div>
@@ -117,7 +101,7 @@
         <!-- Brand Logo -->
         <a href="vistaPanel.php" class="brand-link">
           <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-          <span class="brand-text font-weight-light">AdminLTE 3</span>
+          <span class="brand-text font-weight-light">E-Commerce</span>
         </a>
 
         <!-- Sidebar -->
@@ -125,10 +109,10 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+              <img src="dist/img/getto.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block">Alexander Pierce</a>
+              <a href="#" class="d-block">Team DevComp</a>
             </div>
           </div>
 
@@ -168,7 +152,7 @@
                 </a>
 
               </li>
-              <li class="nav-item menu-open">
+              <!-- <li class="nav-item menu-open">
                 <a href="vistaVentas.php" class="nav-link active">
                   <i class="nav-icon fas fa-cog mx-1"></i>
                   <p>
@@ -177,7 +161,7 @@
                   </p>
                 </a>
 
-              </li>
+              </li> -->
             </ul>
           </nav>
           <!-- /.sidebar-menu -->
